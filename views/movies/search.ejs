@@ -12,7 +12,12 @@
         <div class="row">
             <div class="col">
                 <h1>Peliculas en cartelera</h1>
-                
+                <form action="/movies/index.ejs" method="POST">
+                    <p>
+                      <label for="nombre">Nombre de la Pelicula:</label>
+                      <input type="text" name="nombre" id="nombre_Peliula">
+                    </p>
+                                    
                 <div class="list-group">
                     <% movies.forEach(movie => { %>
                     <div class="list-group-item">                        
